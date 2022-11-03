@@ -1,7 +1,7 @@
 
-let elevarNumero = + prompt("Dime el primer numero");
+let elevarNumero =2;// + prompt("Dime el primer numero");
 
-let numeroPotencia = + prompt("Dime el segundo numero");
+let numeroPotencia =2;// + prompt("Dime el segundo numero");
 
 function potencia(elevarNumero,numeroPotencia) {
     
@@ -10,4 +10,4 @@ function potencia(elevarNumero,numeroPotencia) {
     alert(resultado);
 }
 
-potencia();
+potencia(elevarNumero,numeroPotencia);

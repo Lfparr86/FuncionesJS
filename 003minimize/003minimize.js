@@ -7,10 +7,12 @@ let comprobarNumeroB = + prompt("Dime el segundo numero");
 function comprobarNumeros(comprobarNumeroA,comprobarNumeroB) {
 
     if (comprobarNumeroA < comprobarNumeroB) {
-        alert ("El numero:"+comprobarNumeroA+"es menor que "+comprobarNumeroB);
+        alert ("El primer numero introducido:"+comprobarNumeroA+"es menor que el segundo numero introducido "+comprobarNumeroB);
     }else{
-        alert ("El numero:"+comprobarNumeroB+"es menor que "+comprobarNumeroA);
+        alert ("El primer numero introducido:"+comprobarNumeroA+"es mayor que el segundo numero introducido "+comprobarNumeroB);
+        
+        
     }
     
 }
-comprobarNumeros();
+comprobarNumeros(comprobarNumeroA,comprobarNumeroB);

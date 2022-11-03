@@ -7,10 +7,16 @@ let numeroSegundos = + prompt("Dime cuantos segundos");
 
 let numeroSegundosMilisegundos = numeroSegundos *1000;
 
-function temporizador(numeroMinutos,numeroSegundos) {
+let totalMilisegundos = numeroMinutosMilisegundos + numeroSegundosMilisegundos;
 
-    setTimeout(() => {
-        
-    }, timeout);
+function temporizador(numeroMinutos,numeroSegundos,totalMilisegundos) {
+
+setInterval(() => {
+    
+}, totalMilisegundos);
+    
+}
+
+function contador(params) {
     
 }

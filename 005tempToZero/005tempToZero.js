@@ -9,14 +9,12 @@ let numeroSegundosMilisegundos = numeroSegundos *1000;
 
 let totalMilisegundos = numeroMinutosMilisegundos + numeroSegundosMilisegundos;
 
-function temporizador(numeroMinutos,numeroSegundos,totalMilisegundos) {
+function temporizador() {
 
-setInterval(() => {
-    
-}, totalMilisegundos);
+setInterval(contador, totalMilisegundos);
     
 }
 
-function contador(params) {
-    
+function contador() {
+    console.log("ha pasado un segundo")
 }

@@ -11,10 +11,20 @@ let totalMilisegundos = numeroMinutosMilisegundos + numeroSegundosMilisegundos;
 
 function temporizador() {
 
-setInterval(contador, totalMilisegundos);
+setInterval(mostrarMensaje, 1000);
     
 }
 
-function contador() {
-    console.log("ha pasado un segundo")
+function mostrarMensaje() {
+    console.log("ha pasado un segundo");
+}
+
+function pararTemporizador() {
+
+    if (totalMilisegundos == 0) {
+      
+        clearInterval(temporizador());
+
+    }
+    
 }

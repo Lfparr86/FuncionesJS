@@ -5,24 +5,25 @@ let numeroMinutosMilisegundos = numeroMinutos * 60000;
 
 let numeroSegundos = + prompt("Dime cuantos segundos");
 
-let numeroSegundosMilisegundos = numeroSegundos *1000;
+let numeroSegundosMilisegundos = numeroSegundos * 1000;
 
 let totalMilisegundos = numeroMinutosMilisegundos + numeroSegundosMilisegundos;
 
-temporizador(numeroSegundos);
 
-function temporizador(sec) {
 
-let myInterval = setInterval(mostrarMensaje, 1000, sec);
-if (sec == 0) {
-      
-    clearInterval(myInterval);
+function temporizador(segundos, minutos=0) {
+
+    segundos = segundos + (minutos * 60);
+
+    let intervalo = setInterval(() => {
+
+        console.log(segundos);
+        if (segundos == 0) {
+            clearInterval(intervalo);
+        }
+        segundos--;
+    }, 1000);
 
 }
-}
 
-function mostrarMensaje(sec) {
-    console.log(sec);
-    pararTemporizador();
-    sec--;
-}
+temporizador(numeroSegundos, numeroMinutos);

@@ -1,31 +1,33 @@
 
 
-let fraseOriginal="Hola que tal comemos";
+let fraseOriginal="cocaina cocaina, dame cocaina";
 
-//let fraseModificada = fraseOriginal.replace("c" ,"k");
+//let fraseModificada = fraseOriginal.replaceAll("c" ,"k");
 
 //alert(fraseModificada);
 
-function cambiarFrase() {
+function cambiarFrase(fraseOriginal) {
    
+    fraseOriginal = fraseOriginal.replaceAll("c" ,"k");
+
     let fraseModificada="";
 
     for (let i = 0; i < fraseOriginal.length; i++) {
         
         if (i%2==0) {
 
-           fraseModificada =fraseModificada + fraseOriginal[i].toUpperCase; 
+           fraseModificada =fraseModificada + fraseOriginal[i].toUpperCase(); 
             
         }else{
 
-            fraseModificada =fraseModificada + fraseOriginal[i];
+            fraseModificada =fraseModificada + fraseOriginal[i].toLowerCase();
 
         }
         
     }
 
     //document.write(fraseModificada)
-    alert(fraseModificada)
+    return fraseModificada+"HHH";
 }
 
-cambiarFrase();
+alert (cambiarFrase(fraseOriginal));
